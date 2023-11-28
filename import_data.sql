@@ -7,8 +7,7 @@ CREATE TABLE IF NOT EXISTS Account(
 	account_id INT,
     district_id INT,
     frequency VARCHAR(20),
-    `date` DATE
-);
+    `date` DATE);
 
 LOAD DATA LOCAL
 INFILE '~/Documents/DataScience/ds_projects/loan_default_prediction/data/account.asc'
@@ -26,8 +25,7 @@ CREATE TABLE IF NOT EXISTS Client(
 	client_id INT,
 	gender VARCHAR(10),
 	birth_date DATE,
-	district_id INT
-);
+	district_id INT);
 
 LOAD DATA LOCAL
 INFILE '~/Documents/DataScience/ds_projects/loan_default_prediction/data/client.asc'
@@ -48,8 +46,7 @@ CREATE TABLE IF NOT EXISTS Disposition(
 	disp_id INT,
 	client_id INT,
 	account_id INT,
-	type VARCHAR(20)
-);
+	type VARCHAR(20));
 
 LOAD DATA LOCAL
 INFILE '~/Documents/DataScience/ds_projects/loan_default_prediction/data/disp.asc'
@@ -67,8 +64,7 @@ CREATE TABLE IF NOT EXISTS `Order`(
 	bank_to VARCHAR(5),
 	account_to INT,
 	amount DECIMAL(20, 2),
-	k_symbol VARCHAR(20)
-);
+	k_symbol VARCHAR(20));
 
 LOAD DATA LOCAL
 INFILE '~/Documents/DataScience/ds_projects/loan_default_prediction/data/order.asc'
@@ -90,8 +86,7 @@ CREATE TABLE IF NOT EXISTS Trans(
 	balance INT,
 	k_symbol VARCHAR(20),
 	bank VARCHAR(20),
-	account INT
-);
+	account INT);
 
 LOAD DATA LOCAL
 INFILE '~/Documents/DataScience/ds_projects/loan_default_prediction/data/trans.asc'
@@ -112,8 +107,7 @@ CREATE TABLE IF NOT EXISTS Loan(
 	amount INT,
 	duration INT,
 	payments DECIMAL(20, 2),
-	status VARCHAR(10)
-);
+	status VARCHAR(10));
 
 LOAD DATA LOCAL
 INFILE '~/Documents/DataScience/ds_projects/loan_default_prediction/data/loan.asc'
@@ -129,8 +123,7 @@ CREATE TABLE IF NOT EXISTS Card(
 	card_id INT,
 	disp_id INT,
 	type VARCHAR(20),
-	issued DATE
-);
+	issued DATE);
 
 LOAD DATA LOCAL
 INFILE '~/Documents/DataScience/ds_projects/loan_default_prediction/data/card.asc'
@@ -162,8 +155,7 @@ CREATE TABLE IF NOT EXISTS District(
 	A13 DECIMAL(2, 2),
 	A14 INT,
 	A15 INT,
-	A16 INT
-);
+	A16 INT);
 
 LOAD DATA LOCAL
 INFILE '~/Documents/DataScience/ds_projects/loan_default_prediction/data/district.asc'
@@ -172,6 +164,3 @@ FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 LINES;
-
-
-
