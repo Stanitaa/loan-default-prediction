@@ -10,3 +10,5 @@ Exploratory Data Analysis (EDA): Uncover hidden patterns and valuable insights a
 Modeling Mastery: Harness the power of advanced modeling techniques to construct a predictive framework for loan default. From traditional algorithms to state-of-the-art machine learning models, delve into the nuances of model selection, fine-tuning, and evaluation.
 
 End-to-End Implementation: Seamlessly integrate each phase of the project to witness the evolution from raw data to a sophisticated classification model. Experience the satisfaction of seeing your insights come to life as a practical and actionable solution.
+
+<![relations](https://github.com/Stanitaa/loan-prediction-machine-learning-model/assets/152231834/6a6f31e2-5920-4ef8-a529-0e770b273412)>
